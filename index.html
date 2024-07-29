@@ -3,25 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StrictDownload - Надежное скачивание файлов</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Докатка и Капченка - Невыгодные действия</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            animation: profile-animation 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes profile-animation {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .activities {
+            margin-bottom: 20px;
+        }
+
+        .activities h2 {
+            color: #333;
+        }
+
+        .activities ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .activities ul li {
+            margin-bottom: 10px;
+            animation: list-item-animation 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes list-item-animation {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(10px);
+            }
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            animation: quote-animation 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes quote-animation {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.5;
+            }
+        }
+
+        .quote p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>StrictDownload</h1>
-        <p>Надежное скачивание файлов</p>
-    </header>
-    <section id="files">
-        <h2>Доступные файлы для скачивания</h2>
-        <ul>
-            <li><a href="https://www.example.com/path/to/yourfile.zip" class="download-button">Скачать файл .zip</a></li>
-            <li><a href="https://www.example.com/path/to/yourfile.exe" class="download-button">Скачать файл .exe</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 StrictDownload. Все права защищены.</p>
-    </footer>
-    <script src="scripts.js"></script>
+    <div class="container">
+        <h1>Докатка и Капченка - Невыгодные действия</h1>
+
+        <div class="profile">
+            <img src="dokatka.jpg" alt="Докатка">
+            <h2>Докатка</h2>
+        </div>
+
+        <div class="activities">
+            <h2>Невыгодные действия:</h2>
+            <ul>
+                <li>Разводить собак и продавать их публике.</li>
+                <li>Раздражать других людей собаками.</li>
+                <li>Использовать своих собак для неприличных действий.</li>
+                <li>Использовать доверие других людей.</li>
+            </ul>
+        </div>
+
+        <div class="quote">
+            <p>"Почему мне нужно заботиться о этих собаках, когда я уже взрослый?" - Докатка</p>
+        </div>
+
+        <div class="profile">
+            <img src="kapchenka.jpg" alt="Капченка">
+            <h2>Капченка</h2>
+        </div>
+
+        <div class="activities">
+            <h2>Невыгодные действия:</h2>
+            <ul>
+                <li>Разводить кошек и продавать их публике.</li>
+                <li>Раздражать других людей кошками.</li>
+                <li>Использовать своих кошек для неприличных действий.</li>
+                <li>Использовать доверие других людей.</li>
+            </ul>
+        </div>
+
+        <div class="quote">
+            <p>"Я не люблю кошек, но я уверен, они милые." - Капченка</p>
+        </div>
+    </div>
 </body>
 </html>
