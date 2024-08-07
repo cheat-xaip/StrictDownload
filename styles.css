@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
+    background-color: #1E1E2F;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #444;
+    background-color: #273c75;
     padding: 1em;
 }
 
@@ -20,7 +20,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff0;
+    color: #fbc531;
 }
 
 main {
@@ -28,7 +28,7 @@ main {
 }
 
 footer {
-    background-color: #444;
+    background-color: #273c75;
     text-align: center;
     padding: 1em;
     position: fixed;
@@ -42,14 +42,14 @@ footer {
 
 button {
     padding: 10px 20px;
-    background-color: #ff0;
+    background-color: #fbc531;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #ffc107;
+    background-color: #e1b12c;
 }
 
 #result, #slot-result, #roulette-result, #mines-result, #balance, #account-balance {
