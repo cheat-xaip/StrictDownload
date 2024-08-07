@@ -3,82 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Черно-белый сайт с анимациями</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: white;
-            color: black;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        .animation {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .dokatka {
-            background-color: #f4a460;
-            color: black;
-            padding: 20px;
-        }
-
-        .virus {
-            background-color: #ff6347;
-            color: black;
-            padding: 20px;
-        }
-    </style>
+    <title>CXASINO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Черно-белый сайт с анимациями</h1>
+        <h1>Добро пожаловать в CXASINO</h1>
+        <nav>
+            <a href="#" id="home-link">Главная</a>
+            <a href="#" id="games-link">Игры</a>
+            <a href="#" id="account-link">Аккаунт</a>
+        </nav>
     </header>
-
     <main>
-        <section class="dokatka animation">
-            <h2>Dokatka</h2>
-            <p>Dokatka — это программа, которая может создавать вирусы, шифровать файлы и осуществлять другие вредоносные действия.</p>
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Наслаждайтесь нашим казино с 2000 виртуальными рублями.</p>
         </section>
-
-        <section class="virus animation">
-            <h2>Вирусы</h2>
-            <p>Вирусы — это программы, которые копируют себя сами, распространяются по компьютерным сетям, внедряются в другие программы или файлы, а также выполняют вредоносные действия.</p>
-            <p>Dokatka является одним из способов создания вирусов, так как она может шифровать файлы, копировать себя саму и внедряться в другие программы.</p>
-            <p>Dokatka богаты, поскольку она может создавать шифрованные вирусы, которые могут распространяться по компьютерным сетям, используя свой собственный протокол шифрования.</p>
+        <section id="games" style="display:none;">
+            <h2>Игровой автомат</h2>
+            <button id="play-button">Играть</button>
+            <div id="result"></div>
+            <div id="balance"></div>
+        </section>
+        <section id="account" style="display:none;">
+            <h2>Ваш аккаунт</h2>
+            <p>Баланс: <span id="account-balance">2000</span> RUB</p>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2023 Черно-белый сайт с анимациями</p>
+        <p>&copy; 2024 CXASINO</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
