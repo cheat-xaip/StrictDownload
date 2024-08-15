@@ -1,57 +1,53 @@
-* {
+/* Основные стили для всех элементов */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: radial-gradient(circle, #1b1b1b, #000000);
-    color: white;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background: radial-gradient(circle, #000000, #1a1a1a);
+    color: #ffffff;
     text-align: center;
-    overflow: hidden;
     height: 100vh;
-    background-image: url('stars-background.png');
+    overflow: hidden;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-denim.png'), url('stars-background.png');
     background-size: cover;
-    background-attachment: fixed;
+    animation: moveBackground 200s linear infinite;
 }
 
-@keyframes spaceAnimation {
-    0% { background-position: 0 0; }
-    100% { background-position: 10000px 5000px; }
-}
-
-body {
-    animation: spaceAnimation 200s linear infinite;
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
-    backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     position: relative;
     z-index: 2;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 header h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 3.5em;
     margin-bottom: 10px;
-    font-family: 'Courier New', monospace;
     animation: fadeInDown 1.5s ease-in-out;
 }
 
 header p {
+    font-family: 'Rubik', sans-serif;
     font-size: 1.5em;
     margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
 }
 
 .image-section {
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .image-section img {
@@ -63,13 +59,14 @@ header p {
 }
 
 .download-section h2 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
-    font-family: 'Verdana', sans-serif;
     animation: fadeIn 2s ease-in-out;
 }
 
 .download-section p {
+    font-family: 'Rubik', sans-serif;
     font-size: 1.2em;
     margin-bottom: 20px;
 }
@@ -81,17 +78,18 @@ header p {
 
 button {
     padding: 15px 40px;
-    background-color: #4b6cb7;
-    border: 2px solid #4b6cb7;
+    background-color: #444444;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     color: white;
     font-size: 1.5em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    font-family: 'Roboto Mono', monospace;
 }
 
 button:hover {
-    background-color: #354a7a;
+    background-color: #666666;
     transform: scale(1.1);
 }
 
@@ -103,7 +101,7 @@ button:hover {
 footer p {
     font-size: 0.8em;
     margin-top: 20px;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 @keyframes fadeInDown {
@@ -125,19 +123,4 @@ footer p {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-    
-    .image-section img {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    button {
-        width: 100%;
-    }
 }
